@@ -13,7 +13,7 @@
     <header class="bg-dark">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-          <a class="navbar-brand" href="/">
+          <a class="navbar-brand text-white" href="/">
             <span>Bookers</span>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -24,17 +24,26 @@
             <ul class="navbar-nav ml-auto">
             <% if user_signed_in? %>
             <li class="nav-item">
-              <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'nav-link text-white' %>
+              <%= link_to "Home", destroy_root_path, method: :delete, class: 'nav-link text-white' %>
             </li>
             <li class="nav-item">
-              <%= link_to '投稿フォーム', new_post_image_path, class: 'nav-link text-white' %>
+              <%= link_to 'Users', user_path, class: 'nav-link text-white' %>
             </li>
             <li class="nav-item">
-              <%= link_to 'マイページ', user_path(current_user.id), class: 'nav-link text-white' %>
+              <%= link_to 'Books', book_path(current_user.id), class: 'nav-link text-white' %>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'Log out', user_path(current_user.id), class: 'nav-link text-white' %>
             </li>
             <% else %>
             <li class="nav-item">
-              <%= link_to "新規登録", new_user_registration_path, class: 'nav-link text-white' %>
+              <%= link_to "Home", root_path, class: 'nav-link text-white' %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "About", about_path, class: 'nav-link text-white' %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "Sign up", new_user_registration_path, class: 'nav-link text-white' %>
             </li>
             <li class="nav-item">
               <%= link_to "Log in", new_user_session_path, class: 'nav-link text-white' %>
@@ -46,24 +55,25 @@
       </nav>
     </header>
     <main class="mb-auto">
+      <div class"container">
+        <h1>
+          welcome to
+          <strong>Bookers!!</strong>
+        </h1>
+        <p>
+          In
+          <strong>Bookers</strong>
+        </p>
+        <p>you can share and exchange your opinions , inpressions , and emotions</p>
+        <p>about various books!</p>
+      </div>
     <%= yield %>
     </main>
-    <footer class="bg-dark text-white pt-5 pb-4">
-      <div class="container">
-        <div class="row no-gutters">
-          <div class="col-md-4">
-            <p>善良な市民同士で無差別に食欲を煽るSNS</p>
-          </div>
-          <div class="col-md-8">
-            <h6 class="text-white mt-2 mb-3">Link</h6>
-            <ul class="p-0 list-unstyled">
-              <li>
-                <a href="" title="About" class="text-white-50">会社概要</a>
-              </li>
-              <li>
-                <a href="" title="License informations" class="text-white-50">プライバシーポリシー</a>
-              </li>
-            </ul>
+    <footer>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="mx-auto">
+            <p>CopyRight Infratop.inc</p>
           </div>
         </div>
       </div>
