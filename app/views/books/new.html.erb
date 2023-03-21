@@ -10,11 +10,17 @@
 <% end %>
 <!-- form_with部分 -->
 <%= form_with model: Book.new do |f| %>
+<div>
   <h4>title</h4>
   <%= f.text_field :title %>
+</div>
 
+<div>
   <h4>Opinion</h4>
   <%= f.text_area :body %>
+</div>
 
+<div>
   <%= f.submit 'Create Book' %>
+</div>
 <% end %>

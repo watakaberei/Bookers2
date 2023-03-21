@@ -24,16 +24,16 @@
             <ul class="navbar-nav ml-auto">
             <% if user_signed_in? %>
             <li class="nav-item">
-              <%= link_to "Home", destroy_root_path, method: :delete, class: 'nav-link text-white' %>
+              <%= link_to "Home", books_path, class: 'nav-link text-white' %>
             </li>
             <li class="nav-item">
-              <%= link_to 'Users', user_path, class: 'nav-link text-white' %>
+              <%= link_to 'Users', user_path(current_user.id), class: 'nav-link text-white' %>
             </li>
             <li class="nav-item">
-              <%= link_to 'Books', book_path(current_user.id), class: 'nav-link text-white' %>
+              <%= link_to 'Books', books_path, class: 'nav-link text-white' %>
             </li>
             <li class="nav-item">
-              <%= link_to 'Log out', user_path(current_user.id), class: 'nav-link text-white' %>
+              <%= link_to "Log out", destroy_user_session_path, method: :delete, class: 'nav-link text-white' %>
             </li>
             <% else %>
             <li class="nav-item">
@@ -55,7 +55,7 @@
       </nav>
     </header>
     <main class="mb-auto">
-      <div class"container">
+      <div class="container">
         <h1>
           welcome to
           <strong>Bookers!!</strong>
@@ -66,6 +66,13 @@
         </p>
         <p>you can share and exchange your opinions , inpressions , and emotions</p>
         <p>about various books!</p>
+      </div>
+        <div>
+         <%= link_to "Log in", new_user_session_path, class: "btn btn-info" %>
+        </div>
+        <div>
+         <%= link_to "Sign up", new_user_registration_path, class: "btn btn-success" %>
+        </div>
       </div>
     <%= yield %>
     </main>

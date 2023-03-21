@@ -1,11 +1,1 @@
-<h1>Books</h1>
-
-<% @books.each do |book| %>
-
-<div>
-  <p>title：<%= book.title %></p>
-  <p>Opinion：<%= book.body %></p>
-  <p>ユーザーネーム：<%= book.user.name %></p>
-</div>
-
-<% end %>
+<%= render 'list', books: @books %>
