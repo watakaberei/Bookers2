@@ -1,2 +1,24 @@
-<!-- ユーザーの投稿一覧 -->
-<%= render 'books/home', books: @books, user: @user %>
+<div class="container">
+  <div class="row">
+    <div class="col-xl-3">
+      <%= render 'books/home', books: @books, user: @user %>
+    </div>
+    
+    <div class="col-xl-8">
+      <table class="table">
+        <tr>
+          <th></th>
+          <th>Title</th>
+          <th>Opinion</th>
+        </tr>
+        <tr>
+          <td>
+            <%= link_to user_path(current_user.id) do %>
+            <%= image_tag @user.get_profile_image(100,100) %>
+            <% end %>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
