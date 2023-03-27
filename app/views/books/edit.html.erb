@@ -3,15 +3,18 @@
     <div class="mx-auto col-xl-4">
       <h1>Editing Book</h1>
       <%= form_with model: @book do |f| %>
-      
+
       <p>Title</p>
       <%= f.text_field :title %>
-      
       <p>Opinion</p>
       <%= f.text_area :body %>
-      
+      <div>
       <%= f.submit 'Update Book' %>
-      
+      </div>
+
+      <%= link_to "Show", book_path(@book.id) %>
+      |
+      <a class="back" href="/books">Back</a>
       <% end %>
     </div>
   </div>
