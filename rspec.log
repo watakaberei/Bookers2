@@ -25,7 +25,7 @@ Userモデルのテスト
 [32m      50文字以下であること: 51文字は×[0m
   アソシエーションのテスト
     Bookモデルとの関係
-[31m      1:Nとなっている (FAILED - 1)[0m
+[32m      1:Nとなっている[0m
 
 [STEP1] ユーザログイン前のテスト
   トップ画面のテスト
@@ -61,8 +61,8 @@ Userモデルのテスト
 [32m      password_confirmationフォームが表示される[0m
 [32m      Sign upボタンが表示される[0m
     新規登録成功のテスト
-[31m      正しく新規登録される (FAILED - 2)[0m
-[31m      新規登録後のリダイレクト先が、新規登録できたユーザの詳細画面になっている (FAILED - 3)[0m
+[32m      正しく新規登録される[0m
+[32m      新規登録後のリダイレクト先が、新規登録できたユーザの詳細画面になっている[0m
   ユーザログイン
     表示内容の確認
 [32m      URLが正しい[0m
@@ -91,12 +91,12 @@ Userモデルのテスト
   ヘッダーのテスト: ログインしている場合
     リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。
 [32m      Homeを押すと、自分のユーザ詳細画面に遷移する[0m
-[31m      Usersを押すと、ユーザ一覧画面に遷移する (FAILED - 4)[0m
+[32m      Usersを押すと、ユーザ一覧画面に遷移する[0m
 [32m      Booksを押すと、投稿一覧画面に遷移する[0m
   投稿一覧画面のテスト
     表示内容の確認
 [32m      URLが正しい[0m
-[31m      自分と他人の画像のリンク先が正しい (FAILED - 5)[0m
+[31m      自分と他人の画像のリンク先が正しい (FAILED - 1)[0m
 [32m      自分の投稿と他人の投稿のタイトルのリンク先がそれぞれ正しい[0m
 [32m      自分の投稿と他人の投稿のオピニオンが表示される[0m
     サイドバーの確認
@@ -109,34 +109,34 @@ Userモデルのテスト
 [32m      bodyフォームに値が入っていない[0m
 [32m      Create Bookボタンが表示される[0m
     投稿成功のテスト
-[31m      自分の新しい投稿が正しく保存される (FAILED - 6)[0m
+[32m      自分の新しい投稿が正しく保存される[0m
 [32m      リダイレクト先が、保存できた投稿の詳細画面になっている[0m
   自分の投稿詳細画面のテスト
     表示内容の確認
 [32m      URLが正しい[0m
 [32m      「Book detail」と表示される[0m
-[31m      ユーザ画像・名前のリンク先が正しい (FAILED - 7)[0m
+[31m      ユーザ画像・名前のリンク先が正しい (FAILED - 2)[0m
 [32m      投稿のtitleが表示される[0m
 [32m      投稿のbodyが表示される[0m
 [32m      投稿の編集リンクが表示される[0m
-[31m      投稿の削除リンクが表示される (FAILED - 8)[0m
+[31m      投稿の削除リンクが表示される (FAILED - 3)[0m
     サイドバーの確認
-[31m      自分の名前と紹介文が表示される (FAILED - 9)[0m
-[31m      自分のユーザ編集画面へのリンクが存在する (FAILED - 10)[0m
-[31m      「New book」と表示される (FAILED - 11)[0m
-[31m      titleフォームが表示される (FAILED - 12)[0m
-[31m      titleフォームに値が入っていない (FAILED - 13)[0m
-[31m      bodyフォームが表示される (FAILED - 14)[0m
-[31m      bodyフォームに値が入っていない (FAILED - 15)[0m
-[31m      Create Bookボタンが表示される (FAILED - 16)[0m
+[31m      自分の名前と紹介文が表示される (FAILED - 4)[0m
+[31m      自分のユーザ編集画面へのリンクが存在する (FAILED - 5)[0m
+[31m      「New book」と表示される (FAILED - 6)[0m
+[31m      titleフォームが表示される (FAILED - 7)[0m
+[31m      titleフォームに値が入っていない (FAILED - 8)[0m
+[31m      bodyフォームが表示される (FAILED - 9)[0m
+[31m      bodyフォームに値が入っていない (FAILED - 10)[0m
+[31m      Create Bookボタンが表示される (FAILED - 11)[0m
     投稿成功のテスト
-[31m      自分の新しい投稿が正しく保存される (FAILED - 17)[0m
+[31m      自分の新しい投稿が正しく保存される (FAILED - 12)[0m
     編集リンクのテスト
 [32m      編集画面に遷移する[0m
     削除リンクのテスト
-[31m      application.html.erbにjavascript_pack_tagを含んでいる (FAILED - 18)[0m
-[31m      正しく削除される (FAILED - 19)[0m
-[31m      リダイレクト先が、投稿一覧画面になっている (FAILED - 20)[0m
+[31m      application.html.erbにjavascript_pack_tagを含んでいる (FAILED - 13)[0m
+[31m      正しく削除される (FAILED - 14)[0m
+[31m      リダイレクト先が、投稿一覧画面になっている (FAILED - 15)[0m
   自分の投稿編集画面のテスト
     表示の確認
 [32m      URLが正しい[0m
@@ -152,19 +152,19 @@ Userモデルのテスト
 [32m      リダイレクト先が、更新した投稿の詳細画面になっている[0m
   ユーザ一覧画面のテスト
     表示内容の確認
-[31m      URLが正しい (FAILED - 21)[0m
-[31m      自分と他人の画像が表示される: fallbackの画像がサイドバーの1つ＋一覧(2人)の2つの計3つ存在する (FAILED - 22)[0m
-[31m      自分と他人の名前がそれぞれ表示される (FAILED - 23)[0m
-[31m      自分と他人のshowリンクがそれぞれ表示される (FAILED - 24)[0m
+[32m      URLが正しい[0m
+[31m      自分と他人の画像が表示される: fallbackの画像がサイドバーの1つ＋一覧(2人)の2つの計3つ存在する (FAILED - 16)[0m
+[32m      自分と他人の名前がそれぞれ表示される[0m
+[31m      自分と他人のshowリンクがそれぞれ表示される (FAILED - 17)[0m
     サイドバーの確認
-[31m      自分の名前と紹介文が表示される (FAILED - 25)[0m
-[31m      自分のユーザ編集画面へのリンクが存在する (FAILED - 26)[0m
-[31m      「New book」と表示される (FAILED - 27)[0m
-[31m      titleフォームが表示される (FAILED - 28)[0m
-[31m      titleフォームに値が入っていない (FAILED - 29)[0m
-[31m      bodyフォームが表示される (FAILED - 30)[0m
-[31m      bodyフォームに値が入っていない (FAILED - 31)[0m
-[31m      Create Bookボタンが表示される (FAILED - 32)[0m
+[31m      自分の名前と紹介文が表示される (FAILED - 18)[0m
+[31m      自分のユーザ編集画面へのリンクが存在する (FAILED - 19)[0m
+[31m      「New book」と表示される (FAILED - 20)[0m
+[31m      titleフォームが表示される (FAILED - 21)[0m
+[31m      titleフォームに値が入っていない (FAILED - 22)[0m
+[31m      bodyフォームが表示される (FAILED - 23)[0m
+[31m      bodyフォームに値が入っていない (FAILED - 24)[0m
+[31m      Create Bookボタンが表示される (FAILED - 25)[0m
   自分のユーザ詳細画面のテスト
     表示の確認
 [32m      URLが正しい[0m
@@ -183,42 +183,42 @@ Userモデルのテスト
 [32m      Create Bookボタンが表示される[0m
   自分のユーザ情報編集画面のテスト
     表示の確認
-[31m      URLが正しい (FAILED - 33)[0m
-[31m      名前編集フォームに自分の名前が表示される (FAILED - 34)[0m
-[31m      画像編集フォームが表示される (FAILED - 35)[0m
-[31m      自己紹介編集フォームに自分の自己紹介文が表示される (FAILED - 36)[0m
-[31m      Update Userボタンが表示される (FAILED - 37)[0m
+[31m      URLが正しい (FAILED - 26)[0m
+[31m      名前編集フォームに自分の名前が表示される (FAILED - 27)[0m
+[31m      画像編集フォームが表示される (FAILED - 28)[0m
+[31m      自己紹介編集フォームに自分の自己紹介文が表示される (FAILED - 29)[0m
+[31m      Update Userボタンが表示される (FAILED - 30)[0m
     更新成功のテスト
-[31m      nameが正しく更新される (FAILED - 38)[0m
-[31m      introductionが正しく更新される (FAILED - 39)[0m
-[31m      リダイレクト先が、自分のユーザ詳細画面になっている (FAILED - 40)[0m
+[31m      nameが正しく更新される (FAILED - 31)[0m
+[31m      introductionが正しく更新される (FAILED - 32)[0m
+[31m      リダイレクト先が、自分のユーザ詳細画面になっている (FAILED - 33)[0m
 
 [STEP3] 仕上げのテスト
   サクセスメッセージのテスト
-[31m    ユーザ新規登録成功時 (FAILED - 41)[0m
+[32m    ユーザ新規登録成功時[0m
 [32m    ユーザログイン成功時[0m
-[31m    ユーザログアウト成功時 (FAILED - 42)[0m
-[31m    ユーザのプロフィール情報更新成功時 (FAILED - 43)[0m
-[31m    投稿データの新規投稿成功時: 投稿一覧画面から行います。 (FAILED - 44)[0m
-[31m    投稿データの更新成功時 (FAILED - 45)[0m
+[31m    ユーザログアウト成功時 (FAILED - 34)[0m
+[31m    ユーザのプロフィール情報更新成功時 (FAILED - 35)[0m
+[31m    投稿データの新規投稿成功時: 投稿一覧画面から行います。 (FAILED - 36)[0m
+[31m    投稿データの更新成功時 (FAILED - 37)[0m
   処理失敗時のテスト
     ユーザ新規登録失敗: nameを1文字にする
 [32m      新規登録されない[0m
 [32m      新規登録画面を表示しており、フォームの内容が正しい[0m
 [32m      バリデーションエラーが表示される[0m
     ユーザのプロフィール情報編集失敗: nameを1文字にする
-[31m      更新されない (FAILED - 46)[0m
-[31m      ユーザ編集画面を表示しており、フォームの内容が正しい (FAILED - 47)[0m
-[31m      バリデーションエラーが表示される (FAILED - 48)[0m
+[31m      更新されない (FAILED - 38)[0m
+[31m      ユーザ編集画面を表示しており、フォームの内容が正しい (FAILED - 39)[0m
+[31m      バリデーションエラーが表示される (FAILED - 40)[0m
     投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする
 [32m      投稿が保存されない[0m
-[31m      投稿一覧画面を表示している (FAILED - 49)[0m
+[31m      投稿一覧画面を表示している (FAILED - 41)[0m
 [32m      新規投稿フォームの内容が正しい[0m
 [32m      バリデーションエラーが表示される[0m
     投稿データの更新失敗: titleを空にする
 [32m      投稿が更新されない[0m
-[31m      投稿編集画面を表示しており、フォームの内容が正しい (FAILED - 50)[0m
-[31m      エラーメッセージが表示される (FAILED - 51)[0m
+[31m      投稿編集画面を表示しており、フォームの内容が正しい (FAILED - 42)[0m
+[31m      エラーメッセージが表示される (FAILED - 43)[0m
   ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する
 [32m    ユーザ一覧画面[0m
 [32m    ユーザ詳細画面[0m
@@ -231,22 +231,22 @@ Userモデルのテスト
       表示内容の確認
 [32m        URLが正しい[0m
 [32m        「Book detail」と表示される[0m
-[31m        ユーザ画像・名前のリンク先が正しい (FAILED - 52)[0m
+[31m        ユーザ画像・名前のリンク先が正しい (FAILED - 44)[0m
 [32m        投稿のtitleが表示される[0m
 [32m        投稿のopinionが表示される[0m
 [32m        投稿の編集リンクが表示されない[0m
 [32m        投稿の削除リンクが表示されない[0m
       サイドバーの確認
-[31m        他人の名前と紹介文が表示される (FAILED - 53)[0m
-[31m        他人のユーザ編集画面へのリンクが存在する (FAILED - 54)[0m
+[31m        他人の名前と紹介文が表示される (FAILED - 45)[0m
+[31m        他人のユーザ編集画面へのリンクが存在する (FAILED - 46)[0m
 [32m        自分の名前と紹介文は表示されない[0m
 [32m        自分のユーザ編集画面へのリンクは存在しない[0m
     他人の投稿編集画面
-[31m      遷移できず、投稿一覧画面にリダイレクトされる (FAILED - 55)[0m
+[31m      遷移できず、投稿一覧画面にリダイレクトされる (FAILED - 47)[0m
     他人のユーザ詳細画面のテスト
       表示の確認
 [32m        URLが正しい[0m
-[31m        投稿一覧のユーザ画像のリンク先が正しい (FAILED - 56)[0m
+[31m        投稿一覧のユーザ画像のリンク先が正しい (FAILED - 48)[0m
 [32m        投稿一覧に他人の投稿のtitleが表示され、リンクが正しい[0m
 [32m        投稿一覧に他人の投稿のopinionが表示される[0m
 [32m        自分の投稿は表示されない[0m
@@ -256,12 +256,12 @@ Userモデルのテスト
 [32m        自分の名前と紹介文は表示されない[0m
 [32m        自分のユーザ編集画面へのリンクは存在しない[0m
     他人のユーザ情報編集画面
-[31m      遷移できず、自分のユーザ詳細画面にリダイレクトされる (FAILED - 57)[0m
+[31m      遷移できず、自分のユーザ詳細画面にリダイレクトされる (FAILED - 49)[0m
   グリッドシステムのテスト: container, row, col-md-〇を正しく使えている
-[31m    ユーザ一覧画面 (FAILED - 58)[0m
-[31m    ユーザ詳細画面 (FAILED - 59)[0m
-[31m    投稿一覧画面 (FAILED - 60)[0m
-[31m    投稿詳細画面 (FAILED - 61)[0m
+[31m    ユーザ一覧画面 (FAILED - 50)[0m
+[31m    ユーザ詳細画面 (FAILED - 51)[0m
+[31m    投稿一覧画面 (FAILED - 52)[0m
+[31m    投稿詳細画面 (FAILED - 53)[0m
   アイコンのテスト
     トップ画面
 [32m      本のアイコンが表示される[0m
@@ -278,154 +278,69 @@ Userモデルのテスト
 [32m      Booksリンクのアイコンが表示される[0m
 [32m      Log outリンクのアイコンが表示される[0m
     サイドバー
-[31m      ユーザ一覧画面でレンチアイコンが表示される (FAILED - 62)[0m
+[31m      ユーザ一覧画面でレンチアイコンが表示される (FAILED - 54)[0m
 [32m      ユーザ詳細画面でレンチアイコンが表示される[0m
 [32m      投稿一覧画面でレンチアイコンが表示される[0m
-[31m      投稿詳細画面でレンチアイコンが表示される (FAILED - 63)[0m
+[31m      投稿詳細画面でレンチアイコンが表示される (FAILED - 55)[0m
 
 Failures:
 
-  1) Userモデルのテスト アソシエーションのテスト Bookモデルとの関係 1:Nとなっている
-     [31mFailure/Error: expect(User.reflect_on_association(:books).macro).to eq :has_many[0m
-     [31m[0m
-     [31mNoMethodError:[0m
-     [31m  undefined method `macro' for nil:NilClass[0m
-     [31m[0m
-     [31m          expect(User.reflect_on_association(:books).macro).to eq :has_many[0m
-     [31m                                                    ^^^^^^[0m
-     [36m# ./spec/models/user_spec.rb:52:in `block (4 levels) in <main>'[0m
-
-  2) [STEP1] ユーザログイン前のテスト ユーザ新規登録のテスト 新規登録成功のテスト 正しく新規登録される
-     [31mFailure/Error: expect { click_button 'Sign up' }.to change(User.all, :count).by(1)[0m
-     [31m  expected `User::ActiveRecord_Relation#count` to have changed by 1, but was changed by 0[0m
-     [36m# ./spec/system/01_before_login_spec.rb:148:in `block (4 levels) in <main>'[0m
-
-  3) [STEP1] ユーザログイン前のテスト ユーザ新規登録のテスト 新規登録成功のテスト 新規登録後のリダイレクト先が、新規登録できたユーザの詳細画面になっている
-     [31mFailure/Error: expect(current_path).to eq '/users/' + User.last.id.to_s[0m
-     [31m[0m
-     [31mNoMethodError:[0m
-     [31m  undefined method `id' for nil:NilClass[0m
-     [31m[0m
-     [31m          expect(current_path).to eq '/users/' + User.last.id.to_s[0m
-     [31m                                                          ^^^[0m
-     [36m# ./spec/system/01_before_login_spec.rb:152:in `block (4 levels) in <main>'[0m
-
-  4) [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Usersを押すと、ユーザ一覧画面に遷移する
-     [31mFailure/Error: click_link users_link[0m
-     [31m[0m
-     [31mNoMethodError:[0m
-     [31m  undefined method `logged_in_user' for #<UsersController:0x0000000000db10>[0m
-     [31m[0m
-     [31m              target.send(method, *arguments, &block)[0m
-     [31m                    ^^^^^[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/rendering.rb:20:in `with_renderer'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/etag.rb:27:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/conditional_get.rb:27:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/head.rb:12:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/session/abstract/id.rb:266:in `context'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/session/abstract/id.rb:260:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:37:in `call_app'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:26:in `block in call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:26:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/method_override.rb:24:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/runtime.rb:22:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/sendfile.rb:110:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/engine.rb:539:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:74:in `block in call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:58:in `each'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:58:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/builder.rb:244:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:360:in `process_request'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:163:in `custom_request'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:112:in `get'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:80:in `process'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:55:in `process_and_follow_redirects'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:50:in `follow'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/node.rb:249:in `follow_link'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/node.rb:72:in `click'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/node.rb:138:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/node.rb:138:in `click'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/node/element.rb:172:in `block in click'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/node/element.rb:608:in `block in perform_click_action'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/node/base.rb:84:in `synchronize'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/node/element.rb:608:in `perform_click_action'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/node/element.rb:171:in `click'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/node/actions.rb:42:in `click_link'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/session.rb:773:in `click_link'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `click_link'[0m
-     [36m# ./spec/system/02_after_login_spec.rb:29:in `block (4 levels) in <main>'[0m
-
-  5) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分と他人の画像のリンク先が正しい
+  1) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分と他人の画像のリンク先が正しい
      [31mFailure/Error: expect(page).to have_link '', href: user_path(other_book.user)[0m
      [31m  expected to find link "" with href "/users/1" but there were no matches[0m
      [36m# ./spec/system/02_after_login_spec.rb:52:in `block (4 levels) in <main>'[0m
 
-  6) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 投稿成功のテスト 自分の新しい投稿が正しく保存される
-     [31mFailure/Error: expect { click_button 'Create Book' }.to change(user.books, :count).by(1)[0m
-     [31m[0m
-     [31mNoMethodError:[0m
-     [31m  undefined method `books' for #<User id: 2, email: "corene.shanahan@berge.net", name: "zyhbyn71ai", created_at: "2023-03-27 00:12:15.922291000 +0000", updated_at: "2023-03-27 00:12:15.935316000 +0000", introduction: "2867hjbl8yb2pp0i7mdi">[0m
-     [31m  Did you mean?  book[0m
-     [31m                 book=[0m
-     [36m# ./spec/system/02_after_login_spec.rb:99:in `block (4 levels) in <main>'[0m
-
-  7) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 ユーザ画像・名前のリンク先が正しい
+  2) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 ユーザ画像・名前のリンク先が正しい
      [31mFailure/Error: expect(page).to have_link book.user.name, href: user_path(book.user)[0m
-     [31m  expected to find link "8qcfxu33fg" with href "/users/2" but there were no matches[0m
+     [31m  expected to find link "r6o8ssk86w" with href "/users/2" but there were no matches[0m
      [36m# ./spec/system/02_after_login_spec.rb:121:in `block (4 levels) in <main>'[0m
 
-  8) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿の削除リンクが表示される
+  3) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿の削除リンクが表示される
      [31mFailure/Error: expect(page).to have_link 'Destroy', href: book_path(book)[0m
      [31m  expected to find link "Destroy" with href "/books/1" but there were no matches[0m
      [36m# ./spec/system/02_after_login_spec.rb:133:in `block (4 levels) in <main>'[0m
 
-  9) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
+  4) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
      [31mFailure/Error: expect(page).to have_content user.name[0m
-     [31m  expected to find text "ymycrcu5th" in "Bookers\nHome Users Books Log out\nBook detail\ne4wr3 9d301awvn89kzfs3euqu Edit destroy\nCopyRight Infratop.inc"[0m
+     [31m  expected to find text "nqni5yfomp" in "Bookers\nHome Users Books Log out\nBook detail\nbxfgw pgowtxzty6nkp20wlnu9 Edit destroy\nCopyRight Infratop.inc"[0m
      [36m# ./spec/system/02_after_login_spec.rb:139:in `block (4 levels) in <main>'[0m
 
-  10) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
-      [31mFailure/Error: expect(page).to have_link '', href: edit_user_path(user)[0m
-      [31m  expected to find link "" with href "/users/2/edit" but there were no matches[0m
-      [36m# ./spec/system/02_after_login_spec.rb:143:in `block (4 levels) in <main>'[0m
+  5) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
+     [31mFailure/Error: expect(page).to have_link '', href: edit_user_path(user)[0m
+     [31m  expected to find link "" with href "/users/2/edit" but there were no matches[0m
+     [36m# ./spec/system/02_after_login_spec.rb:143:in `block (4 levels) in <main>'[0m
 
-  11) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 「New book」と表示される
-      [31mFailure/Error: expect(page).to have_content 'New book'[0m
-      [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out\nBook detail\nkjqkn t5m73j3hotpeem2wcsjn Edit destroy\nCopyRight Infratop.inc"[0m
-      [36m# ./spec/system/02_after_login_spec.rb:146:in `block (4 levels) in <main>'[0m
+  6) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 「New book」と表示される
+     [31mFailure/Error: expect(page).to have_content 'New book'[0m
+     [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out\nBook detail\n50a6s g7ghcql7j8yzdc7zlnv3 Edit destroy\nCopyRight Infratop.inc"[0m
+     [36m# ./spec/system/02_after_login_spec.rb:146:in `block (4 levels) in <main>'[0m
 
-  12) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 titleフォームが表示される
-      [31mFailure/Error: expect(page).to have_field 'book[title]'[0m
-      [31m  expected to find field "book[title]" that is not disabled but there were no matches[0m
-      [36m# ./spec/system/02_after_login_spec.rb:149:in `block (4 levels) in <main>'[0m
+  7) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 titleフォームが表示される
+     [31mFailure/Error: expect(page).to have_field 'book[title]'[0m
+     [31m  expected to find field "book[title]" that is not disabled but there were no matches[0m
+     [36m# ./spec/system/02_after_login_spec.rb:149:in `block (4 levels) in <main>'[0m
 
-  13) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 titleフォームに値が入っていない
-      [31mFailure/Error: expect(find_field('book[title]').text).to be_blank[0m
-      [31m[0m
-      [31mCapybara::ElementNotFound:[0m
-      [31m  Unable to find field "book[title]" that is not disabled[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/node/finders.rb:310:in `block in synced_resolve'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/node/base.rb:84:in `synchronize'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/node/finders.rb:299:in `synced_resolve'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/node/finders.rb:60:in `find'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/node/finders.rb:136:in `find_field'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/session.rb:773:in `find_field'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `find_field'[0m
-      [36m# ./spec/system/02_after_login_spec.rb:152:in `block (4 levels) in <main>'[0m
+  8) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 titleフォームに値が入っていない
+     [31mFailure/Error: expect(find_field('book[title]').text).to be_blank[0m
+     [31m[0m
+     [31mCapybara::ElementNotFound:[0m
+     [31m  Unable to find field "book[title]" that is not disabled[0m
+     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/node/finders.rb:310:in `block in synced_resolve'[0m
+     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/node/base.rb:84:in `synchronize'[0m
+     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/node/finders.rb:299:in `synced_resolve'[0m
+     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/node/finders.rb:60:in `find'[0m
+     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/node/finders.rb:136:in `find_field'[0m
+     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/session.rb:773:in `find_field'[0m
+     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `call'[0m
+     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `find_field'[0m
+     [36m# ./spec/system/02_after_login_spec.rb:152:in `block (4 levels) in <main>'[0m
 
-  14) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 bodyフォームが表示される
-      [31mFailure/Error: expect(page).to have_field 'book[body]'[0m
-      [31m  expected to find field "book[body]" that is not disabled but there were no matches[0m
-      [36m# ./spec/system/02_after_login_spec.rb:155:in `block (4 levels) in <main>'[0m
+  9) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 bodyフォームが表示される
+     [31mFailure/Error: expect(page).to have_field 'book[body]'[0m
+     [31m  expected to find field "book[body]" that is not disabled but there were no matches[0m
+     [36m# ./spec/system/02_after_login_spec.rb:155:in `block (4 levels) in <main>'[0m
 
-  15) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 bodyフォームに値が入っていない
+  10) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 bodyフォームに値が入っていない
       [31mFailure/Error: expect(find_field('book[body]').text).to be_blank[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -440,12 +355,12 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `find_field'[0m
       [36m# ./spec/system/02_after_login_spec.rb:158:in `block (4 levels) in <main>'[0m
 
-  16) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 Create Bookボタンが表示される
+  11) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 Create Bookボタンが表示される
       [31mFailure/Error: expect(page).to have_button 'Create Book'[0m
       [31m  expected to find button "Create Book" that is not disabled but there were no matches[0m
       [36m# ./spec/system/02_after_login_spec.rb:161:in `block (4 levels) in <main>'[0m
 
-  17) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 投稿成功のテスト 自分の新しい投稿が正しく保存される
+  12) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 投稿成功のテスト 自分の新しい投稿が正しく保存される
       [31mFailure/Error: fill_in 'book[title]', with: Faker::Lorem.characters(number: 5)[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -460,7 +375,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `fill_in'[0m
       [36m# ./spec/system/02_after_login_spec.rb:167:in `block (4 levels) in <main>'[0m
 
-  18) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 削除リンクのテスト application.html.erbにjavascript_pack_tagを含んでいる
+  13) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 削除リンクのテスト application.html.erbにjavascript_pack_tagを含んでいる
       [31mFailure/Error: click_link 'Destroy'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -475,7 +390,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `click_link'[0m
       [36m# ./spec/system/02_after_login_spec.rb:196:in `block (4 levels) in <main>'[0m
 
-  19) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 削除リンクのテスト 正しく削除される
+  14) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 削除リンクのテスト 正しく削除される
       [31mFailure/Error: click_link 'Destroy'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -490,7 +405,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `click_link'[0m
       [36m# ./spec/system/02_after_login_spec.rb:196:in `block (4 levels) in <main>'[0m
 
-  20) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 削除リンクのテスト リダイレクト先が、投稿一覧画面になっている
+  15) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 削除リンクのテスト リダイレクト先が、投稿一覧画面になっている
       [31mFailure/Error: click_link 'Destroy'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -505,518 +420,89 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `click_link'[0m
       [36m# ./spec/system/02_after_login_spec.rb:196:in `block (4 levels) in <main>'[0m
 
-  21) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 URLが正しい
-      [31mFailure/Error: visit users_path[0m
+  16) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 自分と他人の画像が表示される: fallbackの画像がサイドバーの1つ＋一覧(2人)の2つの計3つ存在する
+      [31mFailure/Error: expect(all('img').size).to eq(3)[0m
       [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `logged_in_user' for #<UsersController:0x00000000019898>[0m
+      [31m  expected: 3[0m
+      [31m       got: 2[0m
       [31m[0m
-      [31m              target.send(method, *arguments, &block)[0m
-      [31m                    ^^^^^[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/rendering.rb:20:in `with_renderer'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/etag.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/conditional_get.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/head.rb:12:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/session/abstract/id.rb:266:in `context'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/session/abstract/id.rb:260:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:37:in `call_app'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:26:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:26:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/method_override.rb:24:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/runtime.rb:22:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/sendfile.rb:110:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/engine.rb:539:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:74:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:58:in `each'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:58:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/builder.rb:244:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:360:in `process_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:163:in `custom_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:112:in `get'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:80:in `process'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:55:in `process_and_follow_redirects'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:26:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/session.rb:280:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `visit'[0m
-      [36m# ./spec/system/02_after_login_spec.rb:260:in `block (3 levels) in <main>'[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/02_after_login_spec.rb:268:in `block (4 levels) in <main>'[0m
 
-  22) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 自分と他人の画像が表示される: fallbackの画像がサイドバーの1つ＋一覧(2人)の2つの計3つ存在する
-      [31mFailure/Error: visit users_path[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `logged_in_user' for #<UsersController:0x00000000019cd0>[0m
-      [31m[0m
-      [31m              target.send(method, *arguments, &block)[0m
-      [31m                    ^^^^^[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/rendering.rb:20:in `with_renderer'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/etag.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/conditional_get.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/head.rb:12:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/session/abstract/id.rb:266:in `context'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/session/abstract/id.rb:260:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:37:in `call_app'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:26:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:26:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/method_override.rb:24:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/runtime.rb:22:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/sendfile.rb:110:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/engine.rb:539:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:74:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:58:in `each'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:58:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/builder.rb:244:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:360:in `process_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:163:in `custom_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:112:in `get'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:80:in `process'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:55:in `process_and_follow_redirects'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:26:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/session.rb:280:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `visit'[0m
-      [36m# ./spec/system/02_after_login_spec.rb:260:in `block (3 levels) in <main>'[0m
+  17) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 自分と他人のshowリンクがそれぞれ表示される
+      [31mFailure/Error: expect(page).to have_link 'Show', href: user_path(user)[0m
+      [31m  expected to find link "Show" with href "/users/2" but there were no matches[0m
+      [36m# ./spec/system/02_after_login_spec.rb:275:in `block (4 levels) in <main>'[0m
 
-  23) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 自分と他人の名前がそれぞれ表示される
-      [31mFailure/Error: visit users_path[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `logged_in_user' for #<UsersController:0x0000000001a108>[0m
-      [31m[0m
-      [31m              target.send(method, *arguments, &block)[0m
-      [31m                    ^^^^^[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/rendering.rb:20:in `with_renderer'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/etag.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/conditional_get.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/head.rb:12:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/session/abstract/id.rb:266:in `context'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/session/abstract/id.rb:260:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:37:in `call_app'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:26:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:26:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/method_override.rb:24:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/runtime.rb:22:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/sendfile.rb:110:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/engine.rb:539:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:74:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:58:in `each'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:58:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/builder.rb:244:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:360:in `process_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:163:in `custom_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:112:in `get'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:80:in `process'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:55:in `process_and_follow_redirects'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:26:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/session.rb:280:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `visit'[0m
-      [36m# ./spec/system/02_after_login_spec.rb:260:in `block (3 levels) in <main>'[0m
+  18) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
+      [31mFailure/Error: expect(page).to have_content user.introduction[0m
+      [31m  expected to find text "0t9v2sa4xhvvelcxpsc6" in "Bookers\nHome Users Books Log out\nUser\nimage name 351whhun7u 2fqrajj432\nCopyRight Infratop.inc"[0m
+      [36m# ./spec/system/02_after_login_spec.rb:283:in `block (4 levels) in <main>'[0m
 
-  24) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 自分と他人のshowリンクがそれぞれ表示される
-      [31mFailure/Error: visit users_path[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `logged_in_user' for #<UsersController:0x0000000001a540>[0m
-      [31m[0m
-      [31m              target.send(method, *arguments, &block)[0m
-      [31m                    ^^^^^[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/rendering.rb:20:in `with_renderer'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/etag.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/conditional_get.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/head.rb:12:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/session/abstract/id.rb:266:in `context'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/session/abstract/id.rb:260:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:37:in `call_app'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:26:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:26:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/method_override.rb:24:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/runtime.rb:22:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/sendfile.rb:110:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/engine.rb:539:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:74:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:58:in `each'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:58:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/builder.rb:244:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:360:in `process_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:163:in `custom_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:112:in `get'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:80:in `process'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:55:in `process_and_follow_redirects'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:26:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/session.rb:280:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `visit'[0m
-      [36m# ./spec/system/02_after_login_spec.rb:260:in `block (3 levels) in <main>'[0m
+  19) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
+      [31mFailure/Error: expect(page).to have_link '', href: edit_user_path(user)[0m
+      [31m  expected to find link "" with href "/users/2/edit" but there were no matches[0m
+      [36m# ./spec/system/02_after_login_spec.rb:286:in `block (4 levels) in <main>'[0m
 
-  25) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
-      [31mFailure/Error: visit users_path[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `logged_in_user' for #<UsersController:0x0000000001a978>[0m
-      [31m[0m
-      [31m              target.send(method, *arguments, &block)[0m
-      [31m                    ^^^^^[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/rendering.rb:20:in `with_renderer'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/etag.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/conditional_get.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/head.rb:12:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/session/abstract/id.rb:266:in `context'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/session/abstract/id.rb:260:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:37:in `call_app'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:26:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:26:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/method_override.rb:24:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/runtime.rb:22:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/sendfile.rb:110:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/engine.rb:539:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:74:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:58:in `each'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:58:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/builder.rb:244:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:360:in `process_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:163:in `custom_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:112:in `get'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:80:in `process'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:55:in `process_and_follow_redirects'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:26:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/session.rb:280:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `visit'[0m
-      [36m# ./spec/system/02_after_login_spec.rb:260:in `block (3 levels) in <main>'[0m
+  20) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 「New book」と表示される
+      [31mFailure/Error: expect(page).to have_content 'New book'[0m
+      [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out\nUser\nimage name lnim118ewy pml2ylz2ms\nCopyRight Infratop.inc"[0m
+      [36m# ./spec/system/02_after_login_spec.rb:289:in `block (4 levels) in <main>'[0m
 
-  26) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
-      [31mFailure/Error: visit users_path[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `logged_in_user' for #<UsersController:0x0000000001adb0>[0m
-      [31m[0m
-      [31m              target.send(method, *arguments, &block)[0m
-      [31m                    ^^^^^[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/rendering.rb:20:in `with_renderer'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/etag.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/conditional_get.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/head.rb:12:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/session/abstract/id.rb:266:in `context'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/session/abstract/id.rb:260:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:37:in `call_app'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:26:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:26:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/method_override.rb:24:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/runtime.rb:22:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/sendfile.rb:110:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/engine.rb:539:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:74:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:58:in `each'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:58:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/builder.rb:244:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:360:in `process_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:163:in `custom_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:112:in `get'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:80:in `process'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:55:in `process_and_follow_redirects'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:26:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/session.rb:280:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `visit'[0m
-      [36m# ./spec/system/02_after_login_spec.rb:260:in `block (3 levels) in <main>'[0m
+  21) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 titleフォームが表示される
+      [31mFailure/Error: expect(page).to have_field 'book[title]'[0m
+      [31m  expected to find field "book[title]" that is not disabled but there were no matches[0m
+      [36m# ./spec/system/02_after_login_spec.rb:292:in `block (4 levels) in <main>'[0m
 
-  27) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 「New book」と表示される
-      [31mFailure/Error: visit users_path[0m
+  22) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 titleフォームに値が入っていない
+      [31mFailure/Error: expect(find_field('book[title]').text).to be_blank[0m
       [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `logged_in_user' for #<UsersController:0x0000000001b1e8>[0m
-      [31m[0m
-      [31m              target.send(method, *arguments, &block)[0m
-      [31m                    ^^^^^[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/rendering.rb:20:in `with_renderer'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/etag.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/conditional_get.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/head.rb:12:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/session/abstract/id.rb:266:in `context'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/session/abstract/id.rb:260:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:37:in `call_app'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:26:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:26:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/method_override.rb:24:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/runtime.rb:22:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/sendfile.rb:110:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/engine.rb:539:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:74:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:58:in `each'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:58:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/builder.rb:244:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:360:in `process_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:163:in `custom_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:112:in `get'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:80:in `process'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:55:in `process_and_follow_redirects'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:26:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/session.rb:280:in `visit'[0m
+      [31mCapybara::ElementNotFound:[0m
+      [31m  Unable to find field "book[title]" that is not disabled[0m
+      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/node/finders.rb:310:in `block in synced_resolve'[0m
+      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/node/base.rb:84:in `synchronize'[0m
+      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/node/finders.rb:299:in `synced_resolve'[0m
+      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/node/finders.rb:60:in `find'[0m
+      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/node/finders.rb:136:in `find_field'[0m
+      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/session.rb:773:in `find_field'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `visit'[0m
-      [36m# ./spec/system/02_after_login_spec.rb:260:in `block (3 levels) in <main>'[0m
+      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `find_field'[0m
+      [36m# ./spec/system/02_after_login_spec.rb:295:in `block (4 levels) in <main>'[0m
 
-  28) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 titleフォームが表示される
-      [31mFailure/Error: visit users_path[0m
+  23) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 bodyフォームが表示される
+      [31mFailure/Error: expect(page).to have_field 'book[body]'[0m
+      [31m  expected to find field "book[body]" that is not disabled but there were no matches[0m
+      [36m# ./spec/system/02_after_login_spec.rb:298:in `block (4 levels) in <main>'[0m
+
+  24) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 bodyフォームに値が入っていない
+      [31mFailure/Error: expect(find_field('book[body]').text).to be_blank[0m
       [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `logged_in_user' for #<UsersController:0x0000000001b620>[0m
-      [31m[0m
-      [31m              target.send(method, *arguments, &block)[0m
-      [31m                    ^^^^^[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/rendering.rb:20:in `with_renderer'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/etag.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/conditional_get.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/head.rb:12:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/session/abstract/id.rb:266:in `context'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/session/abstract/id.rb:260:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:37:in `call_app'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:26:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:26:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/method_override.rb:24:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/runtime.rb:22:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/sendfile.rb:110:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/engine.rb:539:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:74:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:58:in `each'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:58:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/builder.rb:244:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:360:in `process_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:163:in `custom_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:112:in `get'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:80:in `process'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:55:in `process_and_follow_redirects'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:26:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/session.rb:280:in `visit'[0m
+      [31mCapybara::ElementNotFound:[0m
+      [31m  Unable to find field "book[body]" that is not disabled[0m
+      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/node/finders.rb:310:in `block in synced_resolve'[0m
+      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/node/base.rb:84:in `synchronize'[0m
+      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/node/finders.rb:299:in `synced_resolve'[0m
+      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/node/finders.rb:60:in `find'[0m
+      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/node/finders.rb:136:in `find_field'[0m
+      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/session.rb:773:in `find_field'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `visit'[0m
-      [36m# ./spec/system/02_after_login_spec.rb:260:in `block (3 levels) in <main>'[0m
+      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `find_field'[0m
+      [36m# ./spec/system/02_after_login_spec.rb:301:in `block (4 levels) in <main>'[0m
 
-  29) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 titleフォームに値が入っていない
-      [31mFailure/Error: visit users_path[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `logged_in_user' for #<UsersController:0x0000000001ba58>[0m
-      [31m[0m
-      [31m              target.send(method, *arguments, &block)[0m
-      [31m                    ^^^^^[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/rendering.rb:20:in `with_renderer'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/etag.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/conditional_get.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/head.rb:12:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/session/abstract/id.rb:266:in `context'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/session/abstract/id.rb:260:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:37:in `call_app'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:26:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:26:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/method_override.rb:24:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/runtime.rb:22:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/sendfile.rb:110:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/engine.rb:539:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:74:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:58:in `each'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:58:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/builder.rb:244:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:360:in `process_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:163:in `custom_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:112:in `get'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:80:in `process'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:55:in `process_and_follow_redirects'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:26:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/session.rb:280:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `visit'[0m
-      [36m# ./spec/system/02_after_login_spec.rb:260:in `block (3 levels) in <main>'[0m
+  25) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 Create Bookボタンが表示される
+      [31mFailure/Error: expect(page).to have_button 'Create Book'[0m
+      [31m  expected to find button "Create Book" that is not disabled but there were no matches[0m
+      [36m# ./spec/system/02_after_login_spec.rb:304:in `block (4 levels) in <main>'[0m
 
-  30) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 bodyフォームが表示される
-      [31mFailure/Error: visit users_path[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `logged_in_user' for #<UsersController:0x0000000001be90>[0m
-      [31m[0m
-      [31m              target.send(method, *arguments, &block)[0m
-      [31m                    ^^^^^[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/rendering.rb:20:in `with_renderer'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/etag.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/conditional_get.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/head.rb:12:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/session/abstract/id.rb:266:in `context'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/session/abstract/id.rb:260:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:37:in `call_app'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:26:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:26:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/method_override.rb:24:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/runtime.rb:22:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/sendfile.rb:110:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/engine.rb:539:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:74:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:58:in `each'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:58:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/builder.rb:244:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:360:in `process_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:163:in `custom_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:112:in `get'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:80:in `process'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:55:in `process_and_follow_redirects'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:26:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/session.rb:280:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `visit'[0m
-      [36m# ./spec/system/02_after_login_spec.rb:260:in `block (3 levels) in <main>'[0m
-
-  31) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 bodyフォームに値が入っていない
-      [31mFailure/Error: visit users_path[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `logged_in_user' for #<UsersController:0x0000000001c2c8>[0m
-      [31m[0m
-      [31m              target.send(method, *arguments, &block)[0m
-      [31m                    ^^^^^[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/rendering.rb:20:in `with_renderer'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/etag.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/conditional_get.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/head.rb:12:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/session/abstract/id.rb:266:in `context'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/session/abstract/id.rb:260:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:37:in `call_app'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:26:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:26:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/method_override.rb:24:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/runtime.rb:22:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/sendfile.rb:110:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/engine.rb:539:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:74:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:58:in `each'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:58:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/builder.rb:244:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:360:in `process_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:163:in `custom_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:112:in `get'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:80:in `process'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:55:in `process_and_follow_redirects'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:26:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/session.rb:280:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `visit'[0m
-      [36m# ./spec/system/02_after_login_spec.rb:260:in `block (3 levels) in <main>'[0m
-
-  32) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 Create Bookボタンが表示される
-      [31mFailure/Error: visit users_path[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `logged_in_user' for #<UsersController:0x0000000001c700>[0m
-      [31m[0m
-      [31m              target.send(method, *arguments, &block)[0m
-      [31m                    ^^^^^[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/rendering.rb:20:in `with_renderer'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/etag.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/conditional_get.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/head.rb:12:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/session/abstract/id.rb:266:in `context'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/session/abstract/id.rb:260:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:37:in `call_app'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:26:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:26:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/method_override.rb:24:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/runtime.rb:22:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/sendfile.rb:110:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/engine.rb:539:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:74:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:58:in `each'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:58:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/builder.rb:244:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:360:in `process_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:163:in `custom_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:112:in `get'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:80:in `process'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:55:in `process_and_follow_redirects'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:26:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/session.rb:280:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `visit'[0m
-      [36m# ./spec/system/02_after_login_spec.rb:260:in `block (3 levels) in <main>'[0m
-
-  33) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 URLが正しい
+  26) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 URLが正しい
       [31mFailure/Error: visit edit_user_path(user)[0m
       [31m[0m
       [31mNoMethodError:[0m
-      [31m  undefined method `logged_in_user' for #<UsersController:0x00000000020008>[0m
+      [31m  undefined method `correct_user' for #<UsersController:0x0000000001f158>[0m
       [31m[0m
       [31m              target.send(method, *arguments, &block)[0m
       [31m                    ^^^^^[0m
+      [31m  Did you mean?  current_user[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/rendering.rb:20:in `with_renderer'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
@@ -1051,14 +537,15 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `visit'[0m
       [36m# ./spec/system/02_after_login_spec.rb:365:in `block (3 levels) in <main>'[0m
 
-  34) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 名前編集フォームに自分の名前が表示される
+  27) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 名前編集フォームに自分の名前が表示される
       [31mFailure/Error: visit edit_user_path(user)[0m
       [31m[0m
       [31mNoMethodError:[0m
-      [31m  undefined method `logged_in_user' for #<UsersController:0x00000000020440>[0m
+      [31m  undefined method `correct_user' for #<UsersController:0x0000000001f540>[0m
       [31m[0m
       [31m              target.send(method, *arguments, &block)[0m
       [31m                    ^^^^^[0m
+      [31m  Did you mean?  current_user[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/rendering.rb:20:in `with_renderer'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
@@ -1093,14 +580,15 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `visit'[0m
       [36m# ./spec/system/02_after_login_spec.rb:365:in `block (3 levels) in <main>'[0m
 
-  35) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 画像編集フォームが表示される
+  28) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 画像編集フォームが表示される
       [31mFailure/Error: visit edit_user_path(user)[0m
       [31m[0m
       [31mNoMethodError:[0m
-      [31m  undefined method `logged_in_user' for #<UsersController:0x00000000020878>[0m
+      [31m  undefined method `correct_user' for #<UsersController:0x0000000001f928>[0m
       [31m[0m
       [31m              target.send(method, *arguments, &block)[0m
       [31m                    ^^^^^[0m
+      [31m  Did you mean?  current_user[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/rendering.rb:20:in `with_renderer'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
@@ -1135,14 +623,15 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `visit'[0m
       [36m# ./spec/system/02_after_login_spec.rb:365:in `block (3 levels) in <main>'[0m
 
-  36) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 自己紹介編集フォームに自分の自己紹介文が表示される
+  29) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 自己紹介編集フォームに自分の自己紹介文が表示される
       [31mFailure/Error: visit edit_user_path(user)[0m
       [31m[0m
       [31mNoMethodError:[0m
-      [31m  undefined method `logged_in_user' for #<UsersController:0x00000000020cb0>[0m
+      [31m  undefined method `correct_user' for #<UsersController:0x0000000001fd10>[0m
       [31m[0m
       [31m              target.send(method, *arguments, &block)[0m
       [31m                    ^^^^^[0m
+      [31m  Did you mean?  current_user[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/rendering.rb:20:in `with_renderer'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
@@ -1177,14 +666,15 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `visit'[0m
       [36m# ./spec/system/02_after_login_spec.rb:365:in `block (3 levels) in <main>'[0m
 
-  37) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 Update Userボタンが表示される
+  30) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 Update Userボタンが表示される
       [31mFailure/Error: visit edit_user_path(user)[0m
       [31m[0m
       [31mNoMethodError:[0m
-      [31m  undefined method `logged_in_user' for #<UsersController:0x000000000210e8>[0m
+      [31m  undefined method `correct_user' for #<UsersController:0x000000000200f8>[0m
       [31m[0m
       [31m              target.send(method, *arguments, &block)[0m
       [31m                    ^^^^^[0m
+      [31m  Did you mean?  current_user[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/rendering.rb:20:in `with_renderer'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
@@ -1219,14 +709,15 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `visit'[0m
       [36m# ./spec/system/02_after_login_spec.rb:365:in `block (3 levels) in <main>'[0m
 
-  38) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト nameが正しく更新される
+  31) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト nameが正しく更新される
       [31mFailure/Error: visit edit_user_path(user)[0m
       [31m[0m
       [31mNoMethodError:[0m
-      [31m  undefined method `logged_in_user' for #<UsersController:0x00000000021520>[0m
+      [31m  undefined method `correct_user' for #<UsersController:0x000000000204e0>[0m
       [31m[0m
       [31m              target.send(method, *arguments, &block)[0m
       [31m                    ^^^^^[0m
+      [31m  Did you mean?  current_user[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/rendering.rb:20:in `with_renderer'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
@@ -1261,14 +752,15 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `visit'[0m
       [36m# ./spec/system/02_after_login_spec.rb:365:in `block (3 levels) in <main>'[0m
 
-  39) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト introductionが正しく更新される
+  32) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト introductionが正しく更新される
       [31mFailure/Error: visit edit_user_path(user)[0m
       [31m[0m
       [31mNoMethodError:[0m
-      [31m  undefined method `logged_in_user' for #<UsersController:0x00000000021958>[0m
+      [31m  undefined method `correct_user' for #<UsersController:0x000000000208c8>[0m
       [31m[0m
       [31m              target.send(method, *arguments, &block)[0m
       [31m                    ^^^^^[0m
+      [31m  Did you mean?  current_user[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/rendering.rb:20:in `with_renderer'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
@@ -1303,14 +795,15 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `visit'[0m
       [36m# ./spec/system/02_after_login_spec.rb:365:in `block (3 levels) in <main>'[0m
 
-  40) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト リダイレクト先が、自分のユーザ詳細画面になっている
+  33) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト リダイレクト先が、自分のユーザ詳細画面になっている
       [31mFailure/Error: visit edit_user_path(user)[0m
       [31m[0m
       [31mNoMethodError:[0m
-      [31m  undefined method `logged_in_user' for #<UsersController:0x00000000021d90>[0m
+      [31m  undefined method `correct_user' for #<UsersController:0x00000000020cb0>[0m
       [31m[0m
       [31m              target.send(method, *arguments, &block)[0m
       [31m                    ^^^^^[0m
+      [31m  Did you mean?  current_user[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/rendering.rb:20:in `with_renderer'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
@@ -1345,24 +838,20 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `visit'[0m
       [36m# ./spec/system/02_after_login_spec.rb:365:in `block (3 levels) in <main>'[0m
 
-  41) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザ新規登録成功時
-      [31mFailure/Error: is_expected.to have_content 'successfully'[0m
-      [31m  expected to find text "successfully" in "Bookers\nHome About Sign up Log in\nSign up\n1 error prohibited this user from being saved:\nIntroduction can't be blank\nName\nEmail\nPassword (6 characters minimum)\nPassword confirmation\nLog in\nCopyRight Infratop.inc"[0m
-      [36m# ./spec/system/03_finishing_touches_spec.rb:19:in `block (3 levels) in <main>'[0m
-
-  42) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザログアウト成功時
+  34) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザログアウト成功時
       [31mFailure/Error: is_expected.to have_content 'successfully'[0m
       [31m  expected to find text "successfully" in "Bookers\nHome About Sign up Log in\nwelcome to Bookers!!\nIn Bookers\nyou can share and exchange your opinions , inpressions , and emotions\nabout various\nLog in\nSign up\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:36:in `block (3 levels) in <main>'[0m
 
-  43) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザのプロフィール情報更新成功時
+  35) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザのプロフィール情報更新成功時
       [31mFailure/Error: visit edit_user_path(user)[0m
       [31m[0m
       [31mNoMethodError:[0m
-      [31m  undefined method `logged_in_user' for #<UsersController:0x00000000022c90>[0m
+      [31m  undefined method `correct_user' for #<UsersController:0x00000000021bb0>[0m
       [31m[0m
       [31m              target.send(method, *arguments, &block)[0m
       [31m                    ^^^^^[0m
+      [31m  Did you mean?  current_user[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/rendering.rb:20:in `with_renderer'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
@@ -1397,24 +886,25 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `visit'[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:43:in `block (3 levels) in <main>'[0m
 
-  44) [STEP3] 仕上げのテスト サクセスメッセージのテスト 投稿データの新規投稿成功時: 投稿一覧画面から行います。
+  36) [STEP3] 仕上げのテスト サクセスメッセージのテスト 投稿データの新規投稿成功時: 投稿一覧画面から行います。
       [31mFailure/Error: is_expected.to have_content 'successfully'[0m
-      [31m  expected to find text "successfully" in "Bookers\nHome Users Books Log out\nBook detail\nhr96y 8jfmrskfw813h2op8r7v Edit destroy\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "successfully" in "Bookers\nHome Users Books Log out\nBook detail\nvrd2h u4pnswgzi6pcrcaa5iay Edit destroy\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:56:in `block (3 levels) in <main>'[0m
 
-  45) [STEP3] 仕上げのテスト サクセスメッセージのテスト 投稿データの更新成功時
+  37) [STEP3] 仕上げのテスト サクセスメッセージのテスト 投稿データの更新成功時
       [31mFailure/Error: is_expected.to have_content 'successfully'[0m
-      [31m  expected to find text "successfully" in "Bookers\nHome Users Books Log out\nBook detail\nrq3xs cwc1lf6sca68fgjr4uk3 Edit destroy\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "successfully" in "Bookers\nHome Users Books Log out\nBook detail\n68j9r y1llxf9qe5on2fbzd4v1 Edit destroy\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:65:in `block (3 levels) in <main>'[0m
 
-  46) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザのプロフィール情報編集失敗: nameを1文字にする 更新されない
+  38) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザのプロフィール情報編集失敗: nameを1文字にする 更新されない
       [31mFailure/Error: visit edit_user_path(user)[0m
       [31m[0m
       [31mNoMethodError:[0m
-      [31m  undefined method `logged_in_user' for #<UsersController:0x000000000241d0>[0m
+      [31m  undefined method `correct_user' for #<UsersController:0x00000000022ee8>[0m
       [31m[0m
       [31m              target.send(method, *arguments, &block)[0m
       [31m                    ^^^^^[0m
+      [31m  Did you mean?  current_user[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/rendering.rb:20:in `with_renderer'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
@@ -1449,14 +939,15 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `visit'[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:104:in `block (4 levels) in <main>'[0m
 
-  47) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザのプロフィール情報編集失敗: nameを1文字にする ユーザ編集画面を表示しており、フォームの内容が正しい
+  39) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザのプロフィール情報編集失敗: nameを1文字にする ユーザ編集画面を表示しており、フォームの内容が正しい
       [31mFailure/Error: visit edit_user_path(user)[0m
       [31m[0m
       [31mNoMethodError:[0m
-      [31m  undefined method `logged_in_user' for #<UsersController:0x00000000024608>[0m
+      [31m  undefined method `correct_user' for #<UsersController:0x000000000232d0>[0m
       [31m[0m
       [31m              target.send(method, *arguments, &block)[0m
       [31m                    ^^^^^[0m
+      [31m  Did you mean?  current_user[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/rendering.rb:20:in `with_renderer'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
@@ -1491,14 +982,15 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `visit'[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:104:in `block (4 levels) in <main>'[0m
 
-  48) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザのプロフィール情報編集失敗: nameを1文字にする バリデーションエラーが表示される
+  40) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザのプロフィール情報編集失敗: nameを1文字にする バリデーションエラーが表示される
       [31mFailure/Error: visit edit_user_path(user)[0m
       [31m[0m
       [31mNoMethodError:[0m
-      [31m  undefined method `logged_in_user' for #<UsersController:0x00000000024a40>[0m
+      [31m  undefined method `correct_user' for #<UsersController:0x000000000236b8>[0m
       [31m[0m
       [31m              target.send(method, *arguments, &block)[0m
       [31m                    ^^^^^[0m
+      [31m  Did you mean?  current_user[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/rendering.rb:20:in `with_renderer'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
@@ -1533,12 +1025,12 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `visit'[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:104:in `block (4 levels) in <main>'[0m
 
-  49) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする 投稿一覧画面を表示している
+  41) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする 投稿一覧画面を表示している
       [31mFailure/Error: expect(page).to have_content book.body[0m
-      [31m  expected to find text "5g0x5j1rjl1sdun6jt7z" in "Bookers\nHome Users Books Log out\nNew book\n1 errors prohibited this obj from being saved:\nTitle can't be blank\ntitle\nOpinion\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "m6antr6f1c3pfdmf4hvr" in "Bookers\nHome Users Books Log out\nNew book\n1 errors prohibited this obj from being saved:\nTitle can't be blank\ntitle\nOpinion\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:137:in `block (4 levels) in <main>'[0m
 
-  50) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの更新失敗: titleを空にする 投稿編集画面を表示しており、フォームの内容が正しい
+  42) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの更新失敗: titleを空にする 投稿編集画面を表示しており、フォームの内容が正しい
       [31mFailure/Error: expect(find_field('book[title]').text).to be_blank[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1553,27 +1045,27 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `find_field'[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:167:in `block (4 levels) in <main>'[0m
 
-  51) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの更新失敗: titleを空にする エラーメッセージが表示される
+  43) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの更新失敗: titleを空にする エラーメッセージが表示される
       [31mFailure/Error: expect(page).to have_content 'error'[0m
-      [31m  expected to find text "error" in "Bookers\nHome Users Books Log out\nBook detail\n3ce3l scktz27vh1cyw30x7zf4 Edit destroy\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "error" in "Bookers\nHome Users Books Log out\nBook detail\ndqqs8 9bamtqi87l7oalllbhja Edit destroy\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:171:in `block (4 levels) in <main>'[0m
 
-  52) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 ユーザ画像・名前のリンク先が正しい
+  44) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 ユーザ画像・名前のリンク先が正しい
       [31mFailure/Error: expect(page).to have_link other_book.user.name, href: user_path(other_book.user)[0m
-      [31m  expected to find link "4wpnrn3ugf" with href "/users/1" but there were no matches[0m
+      [31m  expected to find link "sc1wglkd2j" with href "/users/1" but there were no matches[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:226:in `block (5 levels) in <main>'[0m
 
-  53) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人の名前と紹介文が表示される
+  45) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人の名前と紹介文が表示される
       [31mFailure/Error: expect(page).to have_content other_user.name[0m
-      [31m  expected to find text "ocbuumc08k" in "Bookers\nHome Users Books Log out\nBook detail\nwfyir ovuk9fcegc3s8jnkpaws\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "5uk13gw0jj" in "Bookers\nHome Users Books Log out\nBook detail\n4y60l lzv7f7erwr8m9jz9h4md\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:244:in `block (5 levels) in <main>'[0m
 
-  54) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する
+  46) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する
       [31mFailure/Error: expect(page).to have_link '', href: edit_user_path(other_user)[0m
       [31m  expected to find link "" with href "/users/1/edit" but there were no matches[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:248:in `block (5 levels) in <main>'[0m
 
-  55) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿編集画面 遷移できず、投稿一覧画面にリダイレクトされる
+  47) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿編集画面 遷移できず、投稿一覧画面にリダイレクトされる
       [31mFailure/Error: expect(current_path).to eq '/books'[0m
       [31m[0m
       [31m  expected: "/books"[0m
@@ -1582,19 +1074,20 @@ Failures:
       [31m  (compared using ==)[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:263:in `block (4 levels) in <main>'[0m
 
-  56) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 投稿一覧のユーザ画像のリンク先が正しい
+  48) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 投稿一覧のユーザ画像のリンク先が正しい
       [31mFailure/Error: expect(page).to have_link '', href: user_path(other_user)[0m
       [31m  expected to find link "" with href "/users/1" but there were no matches[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:277:in `block (5 levels) in <main>'[0m
 
-  57) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ情報編集画面 遷移できず、自分のユーザ詳細画面にリダイレクトされる
+  49) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ情報編集画面 遷移できず、自分のユーザ詳細画面にリダイレクトされる
       [31mFailure/Error: visit edit_user_path(other_user)[0m
       [31m[0m
       [31mNoMethodError:[0m
-      [31m  undefined method `logged_in_user' for #<UsersController:0x0000000002dcf8>[0m
+      [31m  undefined method `correct_user' for #<UsersController:0x0000000002bf98>[0m
       [31m[0m
       [31m              target.send(method, *arguments, &block)[0m
       [31m                    ^^^^^[0m
+      [31m  Did you mean?  current_user[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/rendering.rb:20:in `with_renderer'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
@@ -1629,121 +1122,42 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `visit'[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:311:in `block (4 levels) in <main>'[0m
 
-  58) [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている ユーザ一覧画面
-      [31mFailure/Error: visit users_path[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `logged_in_user' for #<UsersController:0x0000000002e130>[0m
-      [31m[0m
-      [31m              target.send(method, *arguments, &block)[0m
-      [31m                    ^^^^^[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/rendering.rb:20:in `with_renderer'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/etag.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/conditional_get.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/head.rb:12:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/session/abstract/id.rb:266:in `context'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/session/abstract/id.rb:260:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:37:in `call_app'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:26:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:26:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/method_override.rb:24:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/runtime.rb:22:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/sendfile.rb:110:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/engine.rb:539:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:74:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:58:in `each'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:58:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/builder.rb:244:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:360:in `process_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:163:in `custom_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:112:in `get'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:80:in `process'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:55:in `process_and_follow_redirects'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:26:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/session.rb:280:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `visit'[0m
-      [36m# ./spec/system/03_finishing_touches_spec.rb:328:in `block (3 levels) in <main>'[0m
+  50) [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている ユーザ一覧画面
+      [31mFailure/Error: is_expected.to have_selector '.container .row .col-md-3'[0m
+      [31m  expected to find css ".container .row .col-md-3" but there were no matches[0m
+      [36m# ./spec/system/03_finishing_touches_spec.rb:329:in `block (3 levels) in <main>'[0m
 
-  59) [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている ユーザ詳細画面
+  51) [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている ユーザ詳細画面
       [31mFailure/Error: is_expected.to have_selector '.container .row .col-md-3'[0m
       [31m  expected to find css ".container .row .col-md-3" but there were no matches[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:334:in `block (3 levels) in <main>'[0m
 
-  60) [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている 投稿一覧画面
+  52) [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている 投稿一覧画面
       [31mFailure/Error: is_expected.to have_selector '.container .row .col-md-3'[0m
       [31m  expected to find css ".container .row .col-md-3" but there were no matches[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:339:in `block (3 levels) in <main>'[0m
 
-  61) [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている 投稿詳細画面
+  53) [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている 投稿詳細画面
       [31mFailure/Error: is_expected.to have_selector '.container .row .col-md-3'[0m
       [31m  expected to find css ".container .row .col-md-3" but there were no matches[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:344:in `block (3 levels) in <main>'[0m
 
-  62) [STEP3] 仕上げのテスト アイコンのテスト サイドバー ユーザ一覧画面でレンチアイコンが表示される
-      [31mFailure/Error: visit users_path[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `logged_in_user' for #<UsersController:0x00000000030e80>[0m
-      [31m[0m
-      [31m              target.send(method, *arguments, &block)[0m
-      [31m                    ^^^^^[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/rendering.rb:20:in `with_renderer'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.3/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/etag.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/conditional_get.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/head.rb:12:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/session/abstract/id.rb:266:in `context'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/session/abstract/id.rb:260:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:37:in `call_app'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:26:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/rack/logger.rb:26:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/method_override.rb:24:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/runtime.rb:22:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/sendfile.rb:110:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.3/lib/rails/engine.rb:539:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:74:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:58:in `each'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/urlmap.rb:58:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.6.4/lib/rack/builder.rb:244:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:360:in `process_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:163:in `custom_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:112:in `get'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:80:in `process'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:55:in `process_and_follow_redirects'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/browser.rb:26:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/session.rb:280:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.38.0/lib/capybara/dsl.rb:52:in `visit'[0m
-      [36m# ./spec/system/03_finishing_touches_spec.rb:430:in `block (4 levels) in <main>'[0m
+  54) [STEP3] 仕上げのテスト アイコンのテスト サイドバー ユーザ一覧画面でレンチアイコンが表示される
+      [31mFailure/Error: is_expected.to have_selector '.fas.fa-user-cog'[0m
+      [31m  expected to find css ".fas.fa-user-cog" but there were no matches[0m
+      [36m# ./spec/system/03_finishing_touches_spec.rb:431:in `block (4 levels) in <main>'[0m
 
-  63) [STEP3] 仕上げのテスト アイコンのテスト サイドバー 投稿詳細画面でレンチアイコンが表示される
+  55) [STEP3] 仕上げのテスト アイコンのテスト サイドバー 投稿詳細画面でレンチアイコンが表示される
       [31mFailure/Error: is_expected.to have_selector '.fas.fa-user-cog'[0m
       [31m  expected to find css ".fas.fa-user-cog" but there were no matches[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:443:in `block (4 levels) in <main>'[0m
 
-Finished in 56.57 seconds (files took 3.01 seconds to load)
-[31m199 examples, 63 failures[0m
+Finished in 1 minute 6.99 seconds (files took 11.79 seconds to load)
+[31m199 examples, 55 failures[0m
 
 Failed examples:
 
-[31mrspec ./spec/models/user_spec.rb:51[0m [36m# Userモデルのテスト アソシエーションのテスト Bookモデルとの関係 1:Nとなっている[0m
-[31mrspec ./spec/system/01_before_login_spec.rb:147[0m [36m# [STEP1] ユーザログイン前のテスト ユーザ新規登録のテスト 新規登録成功のテスト 正しく新規登録される[0m
-[31mrspec ./spec/system/01_before_login_spec.rb:150[0m [36m# [STEP1] ユーザログイン前のテスト ユーザ新規登録のテスト 新規登録成功のテスト 新規登録後のリダイレクト先が、新規登録できたユーザの詳細画面になっている[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:26[0m [36m# [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Usersを押すと、ユーザ一覧画面に遷移する[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:50[0m [36m# [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分と他人の画像のリンク先が正しい[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:98[0m [36m# [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 投稿成功のテスト 自分の新しい投稿が正しく保存される[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:120[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 ユーザ画像・名前のリンク先が正しい[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:132[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿の削除リンクが表示される[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:138[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 自分の名前と紹介文が表示される[0m
@@ -1758,9 +1172,7 @@ Failed examples:
 [31mrspec ./spec/system/02_after_login_spec.rb:184[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 削除リンクのテスト application.html.erbにjavascript_pack_tagを含んでいる[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:198[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 削除リンクのテスト 正しく削除される[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:201[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 削除リンクのテスト リダイレクト先が、投稿一覧画面になっている[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:264[0m [36m# [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 URLが正しい[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:267[0m [36m# [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 自分と他人の画像が表示される: fallbackの画像がサイドバーの1つ＋一覧(2人)の2つの計3つ存在する[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:270[0m [36m# [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 自分と他人の名前がそれぞれ表示される[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:274[0m [36m# [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 自分と他人のshowリンクがそれぞれ表示される[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:281[0m [36m# [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 自分の名前と紹介文が表示される[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:285[0m [36m# [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する[0m
@@ -1778,7 +1190,6 @@ Failed examples:
 [31mrspec ./spec/system/02_after_login_spec.rb:397[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト nameが正しく更新される[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:400[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト introductionが正しく更新される[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:403[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト リダイレクト先が、自分のユーザ詳細画面になっている[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:12[0m [36m# [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザ新規登録成功時[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:28[0m [36m# [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザログアウト成功時[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:38[0m [36m# [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザのプロフィール情報更新成功時[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:47[0m [36m# [STEP3] 仕上げのテスト サクセスメッセージのテスト 投稿データの新規投稿成功時: 投稿一覧画面から行います。[0m
