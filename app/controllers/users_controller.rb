@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, only: [:destroy, :update]
-  before_action :correct_user,   only: [:destroy, :update]
+  before_action :logged_in_user, only: [:destroy]
+  before_action :correct_user,   only: [:destroy]
 
   def show
     @user = User.find(params[:id])
@@ -12,9 +12,10 @@ class UsersController < ApplicationController
   end
 
   def update
-    @user = User.find(params[:id])
-    @user.update(user_params)
-    redirect_to user_path
+    user = User.find(params[:id])
+    user.update(user_params)
+    flash[:notice] = "You have updated user successfully."
+    redirect_to user_path(user.id)
   end
 
   def index
