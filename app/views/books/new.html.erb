@@ -1,13 +1,6 @@
 <h1>New book</h1>
 
-<% if @book.errors.any? %>
-  <%= @book.errors.count %> errors prohibited this obj from being saved:
-  <ul>
-    <% @book.errors.full_messages.each do |message| %>
-      <li><%= message %></li>
-    <% end %>
-  </ul>
-<% end %>
+<%= render 'home', books: @books, user: @user %>
 <!-- form_with部分 -->
 <%= form_with model: Book.new do |f| %>
 <div>
